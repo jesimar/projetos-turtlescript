@@ -1,0 +1,109 @@
+kturtle-script-v1.0
+@(reset) 
+@(canvassize) 600@(,) 500
+@(learn) rect $x@(,) $y@(,) $compx@(,) $compy {
+  @(go) $x@(,) $y
+  @(direction) 90
+  @(forward) $compx
+  @(turnright) 90
+  
+  @(forward) $compy
+  @(turnright) 90
+
+  @(forward) $compx
+  @(turnright) 90
+
+  @(forward) $compy
+  @(turnright) 90
+}
+
+@(learn) losangulo $x@(,) $y@(,) $compx {
+  @(go) $x@(,) $y
+  @(direction) 55
+  @(forward) $compx
+  @(turnright) 70
+  
+  @(forward) $compx
+  @(turnright) 110
+
+  @(forward) $compx
+  @(turnright) 70
+
+  @(forward) $compx
+}
+
+@(learn) circulo $x@(,) $y@(,) $raio {
+  @(go) $x@(,) $y
+  @(repeat) 18 {
+    @(forward) $raio
+    @(turnright) 20
+  }
+}
+
+@(learn) estrela $x@(,) $y@(,) $comp {
+  @(go) $x@(,) $y
+  @(repeat) 5 {
+    @(forward) $comp
+    @(turnright) 144
+  }
+}
+
+@(learn) rectmsg $x@(,) $y@(,) $compx@(,) $compy {
+  @(go) $x-5@(,) $y
+  @(direction) 100
+  @(forward) $compx
+  @(turnright) 90
+  
+  @(forward) $compy
+  @(turnright) 90
+
+  @(forward) $compx
+  @(turnright) 90
+
+  @(forward) $compy
+  @(turnright) 90
+}
+
+@(learn) mensagem $x@(,) $y{
+  @(go) $x@(,) $y
+  @(direction) 10  
+  @(fontsize) 6
+  @(pencolor) 0@(,) 255@(,) 0
+  @(print) "ORDEM E PROGRESSO"
+  @(pencolor) 255@(,) 255@(,) 255
+  rectmsg $x+3@(,) $y@(,) 80@(,) 15   
+}
+
+@(penwidth) 3
+@(pencolor) 0@(,) 255@(,) 0
+rect 200@(,) 200@(,) 240@(,) 160
+
+@(pencolor) 255@(,) 255@(,) 0
+losangulo 220@(,) 280@(,) 120
+
+
+@(pencolor) 0@(,) 0@(,) 255
+circulo 300@(,) 320@(,) 16
+
+mensagem 285@(,) 260
+
+@(penwidth) 1
+@(pencolor) 200@(,) 200@(,) 200
+
+estrela 325@(,) 260@(,) 5
+
+estrela 325@(,) 290@(,) 5
+estrela 325@(,) 300@(,) 5
+estrela 325@(,) 310@(,) 5
+estrela 315@(,) 295@(,) 5
+estrela 315@(,) 305@(,) 5
+estrela 335@(,) 295@(,) 5
+estrela 340@(,) 305@(,) 5
+estrela 350@(,) 295@(,) 5
+estrela 300@(,) 305@(,) 5
+estrela 295@(,) 295@(,) 5
+estrela 310@(,) 310@(,) 5
+estrela 285@(,) 290@(,) 5
+estrela 300@(,) 290@(,) 5
+
+@(go) 0@(,) 0

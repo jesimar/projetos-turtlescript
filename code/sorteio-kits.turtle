@@ -1,0 +1,29 @@
+kturtle-script-v1.0
+@(reset)
+$num = @(round)(@(random) 1@(,) 10)
+
+@(fontsize) 24
+
+@(print)($num)
+@(if) $num == 1{
+  @(print)("    Adilson")
+} @(else) @(if) $num == 2{
+  @(print)("    Everton")
+} @(else) @(if) $num == 3{
+  @(print)("    Guilherme")
+} @(else) @(if) $num == 4{
+  @(print)("    Inara")
+} @(else) @(if) $num == 5{
+  @(print)("    Isadora")
+} @(else) @(if) $num == 6{
+  @(print)("    Marcio")
+} @(else) @(if) $num == 7{
+  @(print)("    Mateus")
+} @(else) @(if) $num == 8{
+  @(print)("    Rosilaine")
+} @(else) @(if) $num == 9{
+  @(print)("    Vanessa")
+} @(else) @(if) $num == 10{
+  @(print)("    Vanusa")
+}
+@(spritehide)

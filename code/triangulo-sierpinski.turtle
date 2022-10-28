@@ -1,0 +1,22 @@
+kturtle-script-v1.0
+@(reset)
+
+@(turnleft) 90
+@(go) 350@(,) 300
+
+$ladomin = 2
+$lado = 300
+
+@(learn) sierpinski $lado {
+  @(if) $lado > $ladomin {
+    @(repeat) 3 {
+      @(forward) $lado
+      @(turnright) 120
+      sierpinski $lado/2 
+    }
+  }
+}
+
+sierpinski $lado
+
+@(go) 0@(,) 0

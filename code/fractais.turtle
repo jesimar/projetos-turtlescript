@@ -1,0 +1,34 @@
+kturtle-script-v1.0
+@(reset)
+
+$ladomin = 2
+$lado = 300
+
+@(learn) quadrado $lado {
+  @(if) $lado > $ladomin {
+    @(repeat) 4 {
+      @(forward) $lado
+      @(turnright) 90
+      quadrado $lado/3
+    }
+     quadrado $lado/2
+  }
+}
+
+@(learn) cruz $lado {
+  @(if) $lado > $ladomin {
+    @(repeat) 4 {
+      @(forward) $lado
+      @(turnright) 90
+      cruz $lado/3
+    }
+  }
+}
+
+@(turnright) 270
+@(go) 350@(,) 350
+
+quadrado $lado
+#cruz $lado
+
+@(go) 0@(,) 0

@@ -1,0 +1,17 @@
+kturtle-script-v1.0
+@(reset)
+@(go) 130@(,) 200
+@(penwidth) 5
+$r = 0
+@(repeat) 30{
+  @(pencolor) $r@(,) 0@(,) 0
+  @(repeat) 4{
+    @(forward) 150
+    @(turnright) 90
+  }
+  @(forward) 12
+  @(turnright) 15
+  $r = $r + 10
+}
+
+@(go) 0@(,) 0

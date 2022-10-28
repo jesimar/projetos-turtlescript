@@ -1,0 +1,67 @@
+kturtle-script-v1.0
+@(reset)
+@(go) 140@(,) 0
+@(pencolor) 150@(,)100@(,)150
+@(print) "Mandala_Vanusa"
+@(go) 130@(,)200
+@(penwidth) 3
+@(pencolor) 0@(,)0@(,)255
+
+@(repeat) 30 {   
+  @(repeat) 4 {
+    @(forward) 150
+    @(turnright) 90
+  }
+  @(turnright) 12
+  @(forward) 15
+}
+
+@(pencolor) 20@(,)20@(,)20
+@(penwidth) 1
+
+@(repeat) 30 {   
+  @(repeat) 4 {
+    @(forward) 130
+    @(turnright) 90
+  }
+   @(turnright) 12
+   @(forward) 15
+}
+
+@(pencolor) 0@(,)255@(,)0
+@(penwidth) 2
+
+@(repeat) 30 {   
+  @(repeat) 4 {
+    @(forward) 100
+    @(turnright) 90
+  }
+   @(turnright) 12
+   @(forward) 15
+}
+
+@(pencolor) 20@(,)20@(,)20
+@(penwidth) 1
+
+@(repeat) 30 {   
+  @(repeat) 4 {
+    @(forward) 90
+    @(turnright) 90
+  }
+   @(turnright) 12
+   @(forward) 15
+}
+
+@(pencolor) 255@(,)0@(,)0
+@(penwidth) 2
+
+@(repeat) 30 {   
+  @(repeat) 4 {
+    @(forward) 20
+    @(turnright) 90
+  }
+   @(turnright) 12
+   @(forward) 15
+}
+
+@(go) 0@(,)0

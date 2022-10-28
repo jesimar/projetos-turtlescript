@@ -1,0 +1,40 @@
+kturtle-script-v1.0
+@(reset)
+
+@(penwidth) 2
+
+$num_dentro = 0
+$num_max = 3000
+
+#spritehide
+
+@(repeat) $num_max {
+  $x = @(random) -200@(,) 200
+  $y = @(random) -200@(,) 200
+  @(if) $x * $x + $y * $y < 200 * 200{
+    @(pencolor) 0@(,) 255@(,) 0
+    $num_dentro = $num_dentro + 1
+  }@(else) {
+    @(pencolor) 255@(,) 0@(,) 0
+  }
+  @(go) 200+$x@(,) 200+$y
+  @(forward) 1
+}
+
+$picalc = 4*$num_dentro/$num_max
+$erro = 0
+@(if) $picalc > @(pi) {
+  $erro = 100*($picalc - @(pi))/@(pi)
+}@(else){
+  $erro = 100*(@(pi) - $picalc)/@(pi)
+}
+
+@(pencolor) 0@(,) 0@(,) 255
+@(go) 60@(,) -20
+
+$pi3casas = 3.141
+$picalc3casas = (@(round) $picalc*1000)/1000
+$erro3casas = (@(round) $erro*1000)/1000
+@(print) "pi real: " + $pi3casas + "    pi calc: " + $picalc3casas + "    erro: " + $erro3casas + "%"
+
+@(spritehide)

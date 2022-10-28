@@ -1,0 +1,30 @@
+kturtle-script-v1.0
+@(reset) 
+@(go) 100@(,) 250
+@(canvassize) 500@(,) 500
+@(penwidth) 3
+$r = 255
+@(repeat) 20{
+@(repeat) 20{
+#$r = $r + 18
+$i = 0
+@(repeat) 3{
+  @(if) $i == 0{
+    @(pencolor) $r@(,) $r@(,) 0
+  }
+  @(if) $i == 1{
+    @(pencolor) 0@(,) $r@(,) 0
+  }
+  @(if) $i == 2{
+    @(pencolor) 0@(,) 0@(,) $r
+  }
+  $i = $i + 1
+  @(forward) 60
+  @(turnright) 120
+}
+@(forward) 20
+@(turnright) 18
+}
+@(forward) 50
+@(turnright) 18
+}

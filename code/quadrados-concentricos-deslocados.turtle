@@ -1,0 +1,17 @@
+kturtle-script-v1.0
+
+@(reset) 
+
+$comp = 50
+$i = 1
+@(repeat) 5 {
+@(repeat) 4 {
+  @(turnright) 90
+  @(forward) $comp 
+}
+@(turnright) 18
+$comp = $comp + $i * 15
+$i = $i + 1
+@(forward) $i * 10
+
+}

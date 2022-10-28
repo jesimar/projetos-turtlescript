@@ -1,0 +1,32 @@
+kturtle-script-v1.0
+@(reset)
+
+@(learn) quadrado $lado {
+  @(repeat) 4 {   
+    @(fw) $lado
+    @(tr) 90
+  }
+}
+
+@(learn) espiralQ $lado {
+  @(pencolor) 0@(,) 255@(,) 0
+  @(repeat) 40{
+    @(fw) $lado
+    @(tr) 90
+    $lado = $lado + 5
+  }
+}
+
+
+@(learn) espiralQcolor $lado {
+  @(repeat) 50 {
+    @(pencolor) 0@(,) $lado@(,) 0
+    @(fw) $lado
+    @(tr) 90
+    $lado = $lado + 5
+  }
+}
+
+#quadrado 100
+#espiralQ 5
+espiralQcolor 5
