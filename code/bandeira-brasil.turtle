@@ -1,6 +1,6 @@
 kturtle-script-v1.0
 @(reset) 
-@(canvassize) 600@(,) 500
+@(canvassize) 500@(,) 400
 @(learn) rect $x@(,) $y@(,) $compx@(,) $compy {
   @(go) $x@(,) $y
   @(direction) 90
