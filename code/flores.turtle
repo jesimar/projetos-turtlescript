@@ -1,0 +1,53 @@
+kturtle-script-v1.0
+@(reset)
+@(canvassize) 1400@(,) 1400
+@(penwidth) 3
+@(learn) flor $lado {
+  @(pencolor) 255@(,) 128@(,) 0
+  @(repeat) 20 {
+    @(repeat) 6 {
+      @(forward) 12
+      @(turnleft) 9
+    }
+    @(turnright) 235
+    @(repeat) 6 {
+      @(forward) 12
+      @(turnleft) 9
+    }
+    @(turnleft) 90
+  }
+  @(direction) 180
+  @(forward) 54
+  @(pencolor) 0@(,) 255@(,) 0
+  @(forward) 46
+  @(turnright) 135
+  @(repeat) 6 {
+    @(forward) 12
+    @(turnleft) 9
+  }
+  @(turnright) 235
+  @(repeat) 6 {
+    @(forward) 12
+    @(turnleft) 9
+  }
+  @(direction) 90
+  @(repeat) 6 {
+    @(forward) 12
+    @(turnleft) 9
+  }
+  @(turnright) 235
+  @(repeat) 6 {
+    @(forward) 12
+    @(turnleft) 9
+  }
+  @(direction) 180
+  @(forward) 20
+}
+@(repeat) 40{
+  flor 50
+  @(direction) 0
+  $x = @(random) 100@(,) 1300
+  $y = @(random) 80@(,) 1280
+  @(go) $x@(,) $y
+}
+@(go) 0@(,) 0

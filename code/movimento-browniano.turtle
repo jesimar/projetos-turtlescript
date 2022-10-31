@@ -1,0 +1,9 @@
+kturtle-script-v1.0
+@(reset)
+$cont = 0
+@(repeat) 6000 {
+  @(pencolor) $cont/24@(,) 0@(,) 0 
+  @(forward) 2
+  @(turnleft) @(random) 0@(,) 360
+  $cont = $cont + 1  
+}

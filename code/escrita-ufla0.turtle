@@ -1,0 +1,15 @@
+kturtle-script-v1.0
+@(reset)
+@(canvassize) 500@(,) 500
+@(go) 250@(,) 250
+
+@(learn) circuloescritaufla {
+  @(repeat) 36 {
+    @(print) ("Universidade Federal de Lavras")
+    @(turnleft) 10
+  }
+}
+
+circuloescritaufla
+
+@(go) -20@(,) 0

@@ -1,0 +1,21 @@
+kturtle-script-v1.0
+@(reset)
+
+@(learn) casa $lado{
+  @(pencolor) 0@(,) 255@(,) 0
+  @(repeat) 6{
+    @(forward) $lado
+    @(turnleft) 90
+  }
+  @(pencolor) 255@(,) 128@(,) 0
+  @(turnleft) 90
+  @(repeat) 3{
+    @(forward) $lado
+    @(turnleft) 120
+  }
+}
+
+@(go) 270@(,) 320
+@(penwidth) 3
+
+casa 150

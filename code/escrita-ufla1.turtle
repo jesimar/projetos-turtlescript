@@ -1,0 +1,45 @@
+kturtle-script-v1.0
+@(reset)
+@(canvassize) 860@(,) 860
+@(go) 250@(,) 250
+
+@(learn) circuloescritaufla {
+  @(repeat) 36 {
+    @(print) ("Universidade Federal de Lavras")
+    @(turnleft) 10
+  }
+}
+
+@(learn) circuloescritaes {
+  @(pencolor) 255@(,) 0@(,) 0
+  @(repeat) 36 {
+    @(print) ("Engenharia de Software")
+    @(turnleft) 10
+  }
+}
+
+@(learn) circuloescritaep {
+  @(pencolor) 0@(,) 255@(,) 0
+  @(repeat) 36 {
+    @(print) ("Engenharia de Produção")
+    @(turnleft) 10
+  }
+}
+
+@(learn) circuloescritaee {
+  @(pencolor) 0@(,) 0@(,) 255
+  @(repeat) 36 {
+    @(print) ("Engenharia Elétrica")
+    @(turnleft) 10
+  }
+}
+
+circuloescritaufla
+@(gx) 660
+circuloescritaes
+@(go) 250@(,) 660
+circuloescritaep
+@(go) 660@(,) 660
+circuloescritaee
+
+@(go) -20@(,) 0
