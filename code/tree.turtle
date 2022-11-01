@@ -1,21 +1,19 @@
 kturtle-script-v1.0
-# Tree
-
 @(reset)
 @(canvassize) 800@(,) 600
 @(go) 400@(,) 500
 
-@(learn) tree $stufe@(,) $laenge {
-  @(if) $stufe > 0 {
-    @(forward) $laenge
+@(learn) arvore $nivel@(,) $comp {
+  @(if) $nivel > 0 {
+    @(forward) $comp
     @(turnleft) 60
-    tree $stufe-1@(,) 0.7*$laenge
+    arvore $nivel-1@(,) 0.7*$comp
     @(turnright) 120 
-    tree $stufe-1@(,) 0.7*$laenge
+    arvore $nivel-1@(,) 0.7*$comp
     @(turnright) 120
-    @(forward) $laenge
+    @(forward) $comp
     @(turnleft) 180
   }
 }
 
-tree 15@(,) 150
+arvore 12@(,) 150

@@ -1,0 +1,163 @@
+kturtle-script-v1.0
+@(reset)
+
+@(turnleft) 90
+
+@(learn) variante_sierpinski $lado {
+  @(if) $lado > 1 {
+    @(repeat) 3 {
+      @(forward) $lado
+      @(turnright) 120
+      variante_sierpinski $lado/2.5
+    }
+  }
+}
+
+@(learn) variante_sierpinski2 $lado {
+  @(if) $lado > 3 {
+    @(repeat) 3 {
+      @(forward) $lado
+      @(turnright) 120
+      variante_sierpinski2 $lado/1.8
+    }
+  }
+}
+
+@(learn) variante_sierpinski3 $lado {
+  @(if) $lado > 3 {
+    @(repeat) 3 {
+      @(forward) $lado
+      @(turnright) 120
+      variante_sierpinski3 $lado/(@(random) 1.5@(,) 2.7)
+    }
+  }
+}
+
+@(learn) variante_sierpinski4 $lado {
+  @(if) $lado > 3 {
+    @(repeat) 3 {
+      @(forward) @(random) $lado-1@(,) $lado+1
+      @(turnright) 120
+      variante_sierpinski4 $lado/2
+    }
+  }
+}
+
+@(learn) variante_sierpinski5 $lado {
+  @(if) $lado > @(random) 3@(,) 7 {
+    @(repeat) 3 {
+      @(forward) @(random) $lado-1@(,) $lado+1
+      @(turnright) @(random) 120-1@(,) 120+1
+      variante_sierpinski5 $lado/(@(random) 1.8@(,) 2.2)
+    }
+  }
+}
+
+@(learn) triangulo_sierpinski $lado {
+  @(if) $lado > 3 {
+    @(repeat) 3 {
+      @(forward) $lado
+      @(turnright) 120
+      triangulo_sierpinski $lado/2
+    }
+  }
+}
+
+@(learn) quadrado_sierpinski $lado {
+  @(if) $lado > 3 {
+    @(repeat) 4 {
+      @(forward) $lado
+      @(turnright) 90
+      quadrado_sierpinski $lado/2.5
+    }
+  }
+}
+
+@(learn) pentagono_sierpinski $lado {
+  @(if) $lado > 2 {
+    @(repeat) 5 {
+      @(forward) $lado
+      @(turnright) 72
+      pentagono_sierpinski $lado/2.6
+    }
+  }
+}
+
+@(learn) hexagono_sierpinski $lado {
+  @(if) $lado > 1 {
+    @(repeat) 6 {
+      @(forward) $lado
+      @(turnright) 60
+      hexagono_sierpinski $lado/3
+    }
+  }
+}
+
+@(learn) octogono_sierpinski $lado {
+  @(if) $lado > 1 {
+    @(repeat) 8 {
+      @(forward) $lado
+      @(turnright) 45
+      octogono_sierpinski $lado/3.41
+    }
+  }
+}
+
+@(learn) decagono_sierpinski $lado {
+  @(if) $lado > 1 {
+    @(repeat) 10 {
+      @(forward) $lado
+      @(turnright) 36
+      decagono_sierpinski $lado/4.2
+    }
+  }
+}
+
+@(learn) dodecagono_sierpinski $lado {
+  @(if) $lado > 1 {
+    @(repeat) 12 {
+      @(forward) $lado
+      @(turnright) 30
+      dodecagono_sierpinski $lado/4.72
+    }
+  }
+}
+
+
+#go 350, 300
+#variante_sierpinski 300
+
+#go 350, 300
+#variante_sierpinski2 300
+
+#go 350, 300
+#variante_sierpinski3 300
+
+#go 350, 300
+#variante_sierpinski4 300
+
+@(go) 350@(,) 300
+variante_sierpinski5 300
+
+#go 350, 300
+#triangulo_sierpinski 300
+
+#go 350, 350
+#quadrado_sierpinski 300
+
+#go 320, 380
+#pentagono_sierpinski 240
+
+#go 280, 300
+#hexagono_sierpinski 150
+
+#go 280, 380
+#octogono_sierpinski 150
+
+#go 250, 350
+#decagono_sierpinski 100
+
+#go 250, 380
+#dodecagono_sierpinski 100
+
+@(go) 0@(,) 0

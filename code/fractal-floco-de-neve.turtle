@@ -4,19 +4,19 @@ kturtle-script-v1.0
 @(go) 125@(,) 150
 @(turnright) 90
 
-@(learn) koch $length@(,) $depth {
-  @(if) $depth > 0 {
-    $depth = $depth-1
-    $length = $length/3
-    koch $length@(,) $depth
+@(learn) koch $comp@(,) $profundidade {
+  @(if) $profundidade > 0 {
+    $profundidade = $profundidade-1
+    $comp = $comp/3
+    koch $comp@(,) $profundidade
     @(turnleft) 60
-    koch $length@(,) $depth
+    koch $comp@(,) $profundidade
     @(turnright) 120
-    koch $length@(,) $depth
+    koch $comp@(,) $profundidade
     @(turnleft) 60
-    koch $length@(,) $depth
+    koch $comp@(,) $profundidade
   } @(else) {
-  @(forward) 3*$length
+    @(forward) 3*$comp
   }
 }
 

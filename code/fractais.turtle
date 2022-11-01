@@ -4,14 +4,13 @@ kturtle-script-v1.0
 $ladomin = 2
 $lado = 300
 
-@(learn) quadrado $lado {
+@(learn) octogono $lado {
   @(if) $lado > $ladomin {
-    @(repeat) 4 {
+    @(repeat) 8 {
       @(forward) $lado
-      @(turnright) 90
-      quadrado $lado/3
+      @(turnright) 45
+      octogono $lado/4
     }
-     quadrado $lado/2
   }
 }
 
@@ -26,9 +25,11 @@ $lado = 300
 }
 
 @(turnright) 270
-@(go) 350@(,) 350
 
-quadrado $lado
-#cruz $lado
+#go 250, 300
+#octogono $lado
+
+@(go) 350@(,) 350
+cruz $lado
 
 @(go) 0@(,) 0
