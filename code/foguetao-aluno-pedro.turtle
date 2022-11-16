@@ -1,0 +1,34 @@
+kturtle-script-v1.0
+@(reset)
+ 
+@(learn) casa $lado {
+  @(pencolor) 0@(,) 0@(,) 255
+  @(repeat) 6 {
+    @(forward) $lado
+    @(turnleft) 90
+  }
+  @(pencolor) 255@(,) 128@(,) 0
+  @(turnleft) 90
+  @(repeat) 3 {
+    @(forward) $lado
+    @(turnleft) 120
+  }
+  @(turnleft) 90
+}
+
+@(canvassize) 400@(,) 420
+@(go) 270@(,) 320
+@(penwidth) 3
+
+casa 170
+
+@(repeat) 20 {
+  @(go) 100@(,) 320
+  @(turnleft) 380
+  casa 50 
+}
+@(repeat) 20 {
+  @(go) 270@(,) 320
+  @(turnleft) 380
+  casa 50 
+}

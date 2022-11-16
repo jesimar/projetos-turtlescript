@@ -44,7 +44,6 @@ A seguir são listados alguns exemplos de algoritmos utilizando a linguagem Turt
 | tabuleiro.turtle                          | ![](./view/images/tabuleiro.svg)                    |
 | mandala.turtle                            | ![](./view/images/mandala.svg)                      |
 | mandala2.turtle                           | ![](./view/images/mandala2.svg)                     |
-| mandala-aluna-vanusa.turtle               | ![](./view/images/mandala-aluna-vanusa.svg)         |
 | casa.turtle                               | ![](./view/images/casa.svg)                         |
 | casas.turtle                              | ![](./view/images/casas.svg)                        |
 | escrita-ufla0.turtle                      | ![](./view/images/escrita-ufla0.svg)                |
@@ -71,3 +70,10 @@ A seguir são listados alguns exemplos de algoritmos utilizando a linguagem Turt
 | fractais-jesimar.turtle                   | ![](./view/images/variantes/octogono-sierpinski.svg)   |
 | fractais-jesimar.turtle                   | ![](./view/images/variantes/decagono-sierpinski.svg)   |
 | fractais-jesimar.turtle                   | ![](./view/images/variantes/dodecagono-sierpinski.svg) |
+
+A seguir tem-se algumas imagens criadas por alunos. 
+
+| Nome Arquivo Local            | Nome do Aluno(a)             | Imagem                                              |
+|-------------------------------|------------------------------|-----------------------------------------------------|
+| mandala-aluna-vanusa.turtle   | Vanusa R. de Oliveira        | ![](./view/images/mandala-aluna-vanusa.svg)         |
+| foguetao-aluno-pedro.turtle   | Pedro V. M. N. Queiroz       | ![](./view/images/foguetao-aluno-pedro.svg)         |
