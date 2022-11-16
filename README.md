@@ -34,6 +34,15 @@ Conjunto de projetos e algoritmos desenvolvidos utilizando a linguagem TurtleScr
   </p>
 </details>
 
+<details>
+  <summary><b>🛠️ Projeto (GIF): Calculo do Pi usando Monte Carlo:</b></summary>
+  <br/>
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/jesimar/projetos-turtlescript/main/view/images/pi-monte-carlo.gif">
+  </p>
+</details>
+
+
 ## Exemplos de alguns algoritmos em TurtleScript
 
 A seguir são listados alguns exemplos de algoritmos utilizando a linguagem TurtleScript. Estes algoritmos são encontrados dentro da pasta [[`code`](./code/)].
@@ -71,9 +80,9 @@ A seguir são listados alguns exemplos de algoritmos utilizando a linguagem Turt
 | fractais-jesimar.turtle                   | ![](./view/images/variantes/decagono-sierpinski.svg)   |
 | fractais-jesimar.turtle                   | ![](./view/images/variantes/dodecagono-sierpinski.svg) |
 
-A seguir tem-se algumas imagens criadas por alunos. 
+A seguir tem-se algumas imagens criadas por estudantes. 
 
-| Nome Arquivo Local            | Nome do Aluno(a)             | Imagem                                              |
+| Nome Arquivo Local            | Estudante                    | Imagem                                              |
 |-------------------------------|------------------------------|-----------------------------------------------------|
 | mandala-aluna-vanusa.turtle   | Vanusa R. de Oliveira        | ![](./view/images/mandala-aluna-vanusa.svg)         |
 | foguetao-aluno-pedro.turtle   | Pedro V. M. N. Queiroz       | ![](./view/images/foguetao-aluno-pedro.svg)         |
